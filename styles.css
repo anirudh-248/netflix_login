@@ -1,0 +1,58 @@
+body {
+    background-image: url("./backimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-form {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: black;
+    opacity: 90%;
+}
+
+.text {
+    color: white;
+    font-family: sans-serif;
+    padding: 50px;
+}
+
+input {
+    color: white;
+    height: 50px;
+    width: 100%;
+    text-indent: 20px;
+    background-color: rgb(54, 53, 53);
+}
+
+.logo {
+    position: fixed;
+    height: 100px;
+    padding-left: 20px;
+}
+
+.sign-in {
+    height: 50px;
+    width: 102%;
+    background-color: red;  
+}
+
+.sign-in:hover {
+    background-color: darkred;
+    transition: 0.5s;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: gray;
+    transition: 0.5s;
+}

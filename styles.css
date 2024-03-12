@@ -1,58 +1,91 @@
 body {
-    background-image: url("./backimg.jpg");
+    background-image: url("backimg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-.login-form {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    background-color: black;
-    opacity: 85%;
-}
-
-.text {
-    color: white;
-    font-family: sans-serif;
-    padding: 50px;
-}
-
-input {
-    color: white;
-    height: 50px;
+.container {
+    position: relative;
     width: 100%;
-    text-indent: 20px;
-    background-color: rgb(54, 53, 53);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
-    position: fixed;
-    height: 100px;
-    padding-left: 20px;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    height: 75px;
+}
+
+.login-form {
+    position: relative;
+    width: 300px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 5px;
+    color: white;
+}
+
+.login-form h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    height: 40px;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    text-indent: 10px;
+    background-color: rgb(55, 55, 55);
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.85;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    opacity: 0.85;
 }
 
 .sign-in {
-    height: 50px;
-    width: 102%;
-    background-color: red;  
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .sign-in:hover {
-    background-color: darkred;
     transition: 0.5s;
+    background-color: darkred;
 }
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 a:hover {
-    color: gray;
-    transition: 0.5s;
+    text-decoration: underline;
 }

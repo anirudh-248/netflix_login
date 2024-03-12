@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Netflix Login</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img class="logo" src="./Netflix-Logo.png" alt="netflix logo">
-    <div class="login-form">
-        <div class="text">
+    <div class="container">
+        <a href="https://www.netflix.com/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fbrowse">
+            <img class="logo" src="Netflix-Logo.png" alt="Netflix Logo">
+        </a>
+        <div class="login-form">
             <h1>Sign In</h1>
             <form>
-                <label for="email-or-phno"></label>
-                <input class="email" type="text" placeholder="Email or phone number">
-                <br><br>
-                <input class="password" type="text" placeholder="Password">
-                <br><br>
-                <a href="">Forgot password?</a>
-                <br><br><br>
-                <input class="sign-in" type="button" value="Sign In">
+                <input type="text" id="email" name="email" placeholder="Email or phone number">
+                <input type="password" id="password" name="password" placeholder="Password">
+                <br>
+                <input type="submit" class="sign-in" value="Sign In">
+                <div class="form-footer">
+                    <a href="#">Forgot password?</a>
+                </div>
             </form>
         </div>
     </div>
